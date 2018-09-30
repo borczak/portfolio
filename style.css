@@ -1,0 +1,149 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header {
+    height: 500px;
+    width: 100%;
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-inner {
+    height: 250px;
+}
+
+.header p{
+     line-height: 3em;
+    font-size: 20px;
+    color:gray;
+}
+.header span{
+   color: #007bff;
+}
+
+h1 {
+   color:#007bff;
+    font-size: 60px;
+    margin: 0;
+}
+
+.header p {
+    display: inline;
+    margin: 20px;
+}
+
+hr {
+    width: 70px;
+    height: 1px;
+    background-color: #007bff;
+    margin: 0 auto;
+}
+
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #007bff;;
+    color: #333;
+    height: 30px;
+    text-transform: uppercase;
+   padding: 10px;
+  transition: all 0.4s;
+}
+.button:hover{
+    background-color: #007bff;
+    color:#fff;
+}
+
+
+.main-nav {    
+    background-color:#007bff;
+    text-align: center;
+    position: sticky;
+    top: 0;
+      
+}
+.main-nav ul{   
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav{
+    padding: 10px;
+    
+}
+
+.main-nav li {
+    display: inline;
+    padding: 20px;
+}
+.main-nav a {
+    color: white;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+      transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.main-nav a:hover{
+     color:#007bff;
+    background-color: white;
+  }
+
+#about  {
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+#about img{
+    border-radius: 50%;
+    margin: 20px;
+}
+h2{
+    text-align: center;
+    color: gray;
+    font-weight: 100;
+    
+}
+#portfolio{
+    background-color:#f2f1ed;
+/*    padding: 40px;*/
+}
+
+.foto figure {
+    margin:0;
+    padding: 0;
+    height: 100%;
+     
+}
+
+.foto{    
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+        
+
+}
+.foto img{
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    display: inline-block;
+     flex-basis: auto;   
+}
