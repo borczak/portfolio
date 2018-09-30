@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+ 
     <title>Portfolio</title>
 
 </head>
@@ -25,14 +29,14 @@
         </div>
     </header>
 
-
-
     <nav class="main-nav">
-        <ul>
-            <li class="nav"><a href="#about">O mnie</a></li>
-            <li class="nav"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav"><a href="#contact">Kontakt</a></li>
-        </ul>
+    <label for="menu">Menu</label>
+    <input type="checkbox" id="menu">
+      <ul>
+        <li class="nav"><a href="#about">O mnie</a></li>
+        <li class="nav"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav"><a href="#contact">Kontakt</a></li>
+      </ul>
     </nav>
     <section id="about">
         <div>
@@ -49,8 +53,8 @@
             <h2>Portfolio</h2>
             <hr>
         </div>
-        <div class="foto">
-            <figure><img src="img/portfolio/photo-1.jpg" alt="foto1"></figure>
+        <div class="gallery">
+            <figure><img src="img/portfolio/photo-1.jpg" alt=""></figure>
             <figure><img src="img/portfolio/photo-2.jpg" alt=""></figure>
             <figure><img src="img/portfolio/photo-3.jpg" alt=""></figure>
             <figure><img src="img/portfolio/photo-4.jpg" alt=""></figure>
@@ -66,20 +70,31 @@
         </div>
     </section>
     <section id="contact">
-        <div>
+        <header>
             <h2>Kontakt</h2>
+            <hr>
+        </header>
+          <form id="form" action=""method="">         
+            <input type="text" id="name" placeholder="Imię">
+            <input type="text" id="email" placeholder="Email">
+            <textarea name="msg" id="msg" cols="30" rows="6" placeholder="Wiadomość"></textarea>
+            <input type="submit" value="Wyślij Wiadomość"class="button button-form" >
+             
+         </form>
+<!--        contact start-->
+       <div class="social">
+           <a href=""><i class="fab fa-facebook"></i></a>
+           <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
         </div>
     </section>
+<!--    contact end-->
+    <footer>
+        <p>Copyrigt &copy; Akademia108 - Szkoła Programowania </p>
+    </footer>
 
-
-
-
-
-
-
-
-
-    <i class="fab fa-facebook"></i>
+  
 </body>
 
 </html>

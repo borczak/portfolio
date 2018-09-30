@@ -21,17 +21,18 @@ body {
     height: 250px;
 }
 
-.header p{
-     line-height: 3em;
+.header p {
+    line-height: 3em;
     font-size: 20px;
-    color:gray;
+    color: gray;
 }
-.header span{
-   color: #007bff;
+
+.header span {
+    color: #007bff;
 }
 
 h1 {
-   color:#007bff;
+    color: #007bff;
     font-size: 60px;
     margin: 0;
 }
@@ -52,98 +53,210 @@ hr {
 .button {
     text-decoration: none;
     display: inline-block;
-    border: 1px solid #007bff;;
+    border: 1px solid #007bff;
+    /*    background-color: #fff;*/
     color: #333;
     height: 30px;
     text-transform: uppercase;
-   padding: 10px;
-  transition: all 0.4s;
+    padding: 10px;
+    transition: all 0.4s;
+    /*    text-align: center;*/
 }
-.button:hover{
+
+.button:hover {
     background-color: #007bff;
-    color:#fff;
+    color: #fff;
 }
 
 
-.main-nav {    
-    background-color:#007bff;
+.main-nav {
+    background-color: #007bff;
     text-align: center;
     position: sticky;
     top: 0;
-      
+    z-index: 1;
+
 }
-.main-nav ul{   
+
+.main-nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    
+
 }
-.nav{
+
+.nav {
     padding: 10px;
-    
+
 }
 
 .main-nav li {
     display: inline;
     padding: 20px;
 }
+
 .main-nav a {
     color: white;
     padding: 10px;
     list-style: none;
     text-decoration: none;
-      transition: all 0.4s;
+    transition: all 0.4s;
     transition-timing-function: ease-in-out;
 }
-.main-nav a:hover{
-     color:#007bff;
-    background-color: white;
-  }
 
-#about  {
+.main-nav a:hover {
+    color: #007bff;
+    background-color: white;
+}
+
+.main-nav label,
+#menu {
+    display: none;
+    color: #fff;
+}
+
+#about {
     padding: 30px;
     text-align: center;
     color: #777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#about img{
+
+#about p {
+    max-width: 700px;
+}
+
+#about img {
     border-radius: 50%;
     margin: 20px;
 }
-h2{
+
+
+#portfolio {
+    background-color: #f2f1ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h2 {
     text-align: center;
     color: gray;
     font-weight: 100;
-    
-}
-#portfolio{
-    background-color:#f2f1ed;
-/*    padding: 40px;*/
+
 }
 
-.foto figure {
-    margin:0;
-    padding: 0;
-    height: 100%;
-     
-}
+.gallery {
 
-.foto{    
-    text-align: center;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    margin: 70px;
     padding: 0;
-        
 
 }
-.foto img{
-    height: 150px;
-    width: 250px;
+
+.gallery figure {
+    margin: 0;
+    padding: 0;
+    flex-basis: 25%;
+    position: relative;
+    height: 200px;
+    transition:
+
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     display: inline-block;
-     flex-basis: auto;   
+    flex-basis: 25%;
+
+}
+
+.gallery figure:hover {}
+
+.gallery figure:hover::before {
+    content: 'projekt';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.5);
+    opacity: 1;
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+#contact header{
+    margin: 40px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+#contact form {
+
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: space-between;
+    margin: ) auto;
+    width: 60%;
+    }
+
+#contact form input:not([type="submit"]) {
+    height: 20px;
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#contact form textarea {
+    flex-basis: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.button-form {
+    background-color: #fff;
+    margin: 0 auto;
+    flex-basis:20%;
+}
+
+.social {
+    font-size: 40px;
+
+}
+
+.social a {
+    text-decoration: none;
+    color: #007bff;
+    flex-basis: 30%;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f2f1ed;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: capitalize;
+    padding: 40px;
+}
+footer p{
+    margin: 0;
 }
